@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shope</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(216, 184, 225);
+        }
+
+        .navbar {
+            background-color: rgb(2, 17, 3);
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .navbar-icons {
+            height: 60px;
+        }
+
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #c87c7c;
+            margin-left: 10px;
+
+
+        }
+
+        .navbar-menus {
+            width: 90px;
+            height: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            margin-left: 40px;
+            margin-top: 15px;
+            background-color: rgb(161, 71, 6);
+            transition: 1.5s;
+
+        }
+
+        .navbar-menus:hover {
+            background-color: rgb(140, 43, 231);
+            box-shadow: 3px 0px 5px 3px rgb(152, 26, 120);
+            transform: scale(0.5);
+        }
+
+        .img {
+            height: 200px;
+            margin-right: 100px;
+            margin-top: 10px;
+
+
+
+        }
+
+        .heder-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .shope-container {
+            color: #c87c7c;
+            font-size: 30px;
+        }
+
+        .shope-container1 {
+            color: rgb(218, 15, 15);
+        }
+
+        .order-btn {
+            color: #573d89;
+            background-color: #033905;
+            font-size: 20px;
+            border-radius: 20px;
+            transition: 1s;
+        }
+
+        .order-btn:hover {
+            transform: scale(0.5);
+            box-shadow: 3px 3px 3px 3px rgb(18, 17, 15);
+
+        }
+
+
+
+        @media only screen and (min-width: 600px) and (max-width: 800px) {
+            .navbar-menus {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-menus {
+                display: block;
+                margin: 10px;
+                width: 100px;
+                text-align: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            @media only screen and (min-width: 601px) and (max-width: 800px) {
+                .navbar-menus {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                }
+
+
+
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 600px) {
+            .heder-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="icons8-cake-94.png" class="navbar-icons" />
+        <p class="brand-name"><i>🌹SAGAR's cake shope🌹</i></p>
+
+
+
+        <span class="navbar-menus">home</span>
+
+        <span class="navbar-menus">about</span>
+
+        <span class="navbar-menus">servises</span>
+
+        <span class="navbar-menus">contact</span>
+
+    </div>
+
+
+    <div class="heder-container">
+
+        <div class="main-container">
+            <img src="14529297.jpg" class="img" />
+        </div>
+
+        <div>
+            <h1 class="shope-container">open my cake shope🌼</h1>
+            <p class="shope-container1">order yuor fevreate cake</p>
+            <button class="order-btn">order now⏭️</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

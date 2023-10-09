@@ -9,11 +9,11 @@
         body {
             padding: 0;
             margin: 0;
-            background-color: rgb(216, 184, 225);
+            background-color: rgb(225, 168, 125);
         }
 
         .navbar {
-            background-color: rgb(2, 17, 3);
+            background-color: black;
             padding: 10px;
             display: flex;
             flex-direction: row;
@@ -23,6 +23,7 @@
 
         .navbar-icons {
             height: 60px;
+
         }
 
         .brand-name {
@@ -40,12 +41,13 @@
             font-size: 20px;
             font-weight: bold;
             cursor: pointer;
+            border: 1px solid white;
             border-radius: 15px;
             display: flex;
             justify-content: center;
             margin-left: 40px;
             margin-top: 15px;
-            background-color: rgb(161, 71, 6);
+            background-color: rgba(255, 255, 255, 0.593);
             transition: 1.5s;
 
         }
@@ -60,6 +62,8 @@
             height: 200px;
             margin-right: 100px;
             margin-top: 10px;
+            border-radius: 20px;
+            border: solid green;
 
 
 
@@ -69,12 +73,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
 
 
         .shope-container {
-            color: #c87c7c;
+            color: rgb(61, 90, 4);
             font-size: 30px;
+            transition: 1s;
+
+        }
+
+        .shope-container:hover {
+            box-shadow: 2px 2px 2px 2px gray;
+            transform: scale(0.3);
         }
 
         .shope-container1 {
@@ -82,8 +94,8 @@
         }
 
         .order-btn {
-            color: #573d89;
-            background-color: #033905;
+            color: salmon;
+            background-color: rgb(13, 11, 11);
             font-size: 20px;
             border-radius: 20px;
             transition: 1s;
@@ -94,6 +106,148 @@
             box-shadow: 3px 3px 3px 3px rgb(18, 17, 15);
 
         }
+
+        .feuture-card {
+
+            width: 240px;
+            border: solid yellowgreen;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 3px 2px green;
+        }
+
+        .feuture-card:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        .card-image {
+            width: 20px;
+
+            padding-left: 50%;
+            padding-right: 50%;
+
+
+        }
+
+        .feuture-title {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .feture-discription {
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .feuture-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .our-cakes-heading {
+            font-size: 50px;
+            color: #ee0909;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .cakes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px;
+        }
+
+
+        .cake-card {
+            background-color: white;
+            width: 130px;
+            height: 160px;
+            padding: 20px 20px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px 3px rgb(31, 129, 6);
+
+        }
+
+        .cake-card:hover {
+            transition: 1s;
+            transform: scale(1.1);
+        }
+
+        .cake-card-img {
+            width: 50px;
+            display: block;
+            margin: 5px auto;
+            filter: drop-shadow(5px 5px 5px green);
+        }
+
+        .cake-card-title {
+            text-align: center;
+            font-size: 15px;
+            padding-top: 10px;
+            color: rgb(243, 10, 224);
+        }
+
+        .cake-card-price {
+            text-align: center;
+            color: rgb(243, 10, 224);
+
+        }
+
+        .cake-card-btn {
+            color: rgb(243, 10, 224);
+            background-color: black;
+            padding: 2px;
+            margin-left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .reviwes-title {
+            text-align: center;
+            color: black;
+            font-size: 30px;
+        }
+
+        .costomer-reviews-card{
+            background-color: white;
+            border-radius: 10px;
+            width: 210px;
+            height: 200pxpx;
+            margin: 20px;
+            display: flex;
+            
+            
+        }
+
+        .reviwes-card-img{
+            width: 80px;
+            padding-left: 60px;
+            padding-top: 10px;
+       
+        }
+        .reviews-name{
+            text-align: center;
+            font-size: 10px;
+            color: #47e213;
+        } 
+
+        .reviews-discription{
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+
+        .reviwes-card{
+
+        }
+
+        
 
 
 
@@ -114,16 +268,12 @@
                 flex-direction: column;
             }
 
-            @media only screen and (min-width: 601px) and (max-width: 800px) {
-                .navbar-menus {
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 10px;
-                }
-
-
-
+            .feuture-card {
+                margin-top: 80px;
             }
+
+
+
         }
 
         @media only screen and (min-width: 300px) and (max-width: 600px) {
@@ -131,6 +281,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            .feuture-card {
+                margin-top: 50px;
             }
 
 
@@ -141,7 +295,7 @@
 <body>
     <div class="navbar">
         <img src="icons8-cake-94.png" class="navbar-icons" />
-        <p class="brand-name"><i>🌹SAGAR's cake shope🌹</i></p>
+        <p class="brand-name"><u>SAGAR's cake shope</u></p>
 
 
 
@@ -161,14 +315,155 @@
         <div class="main-container">
             <img src="14529297.jpg" class="img" />
         </div>
-
         <div>
-            <h1 class="shope-container">open my cake shope🌼</h1>
+            <h1 class="shope-container">open my cake shope</h1>
             <p class="shope-container1">order yuor fevreate cake</p>
             <button class="order-btn">order now⏭️</button>
         </div>
 
     </div>
+
+
+
+    <div class="feuture-container">
+        <div class="feuture-card">
+            <img src="icons8-gas-stove-50.png" class="card-image" />
+            <h3 class="feuture-title">
+                beutiful cake shope🌹
+            </h3>
+            <p class="feture-discription">cake freshly delevor within 4 hors in a order resive</p>
+        </div>
+
+        <div class="feuture-card">
+            <img src="icons8-deliver-64 (1).png" class="card-image" />
+            <h3 class="feuture-title">
+                chocolare cake✨
+            </h3>
+            <p class="feture-discription">free on cost and free deleovery</p>
+        </div>
+
+        <div class="feuture-card">
+            <img src="icons8-pineapple-48.png" class="card-image" />
+            <h3 class="feuture-title">
+                pineapple cake 🤩
+            </h3>
+            <p class="feture-discription">Cake is a flour confeecation made fromnflour</p>
+        </div>
+
+        <div class="feuture-card">
+            <img src="icons8-chocolate-bar-48.png" class="card-image" />
+            <h3 class="feuture-title">
+                Swiss Chocolate Cake🥳
+            </h3>
+            <p class="feture-discription">The world itself is of viking origin, from the old Norse word "kaka</p>
+        </div>
+
+    </div>
+
+    <h1 class="our-cakes-heading">our cakes</h1>
+    <div class="cakes-container">
+
+
+        <div class="cake-card">
+
+            <img src="./img/birthday-cake.png" class="cake-card-img" />
+            <h3 class="cake-card-title">birthday cake</h3>
+            <p class="cake-card-price">rs-299 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cake (1).png" class="cake-card-img" />
+            <h3 class="cake-card-title">Angle cake</h3>
+            <p class="cake-card-price">rs-999</p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cake (2).png" class="cake-card-img" />
+            <h3 class="cake-card-title">Apple Cake</h3>
+            <p class="cake-card-price">rs-599 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/sweet-food.png" class="cake-card-img" />
+            <h3 class="cake-card-title">Banana Cakes</h3>
+            <p class="cake-card-price">rs-199 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cake (3).png" class="cake-card-img" />
+            <h3 class="cake-card-title">Chiffon cakes</h3>
+            <p class="cake-card-price">rs-399 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cake (4).png" class="cake-card-img" />
+            <h3 class="cake-card-title">Coconut Cake</h3>
+            <p class="cake-card-price">rs-1010 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cake (5).png" class="cake-card-img" />
+            <h3 class="cake-card-title">Dundde Cake</h3>
+            <p class="cake-card-price">rs-777 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cupcake.png" class="cake-card-img" />
+            <h3 class="cake-card-title">Cup Cake</h3>
+            <p class="cake-card-price">rs-999 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/cake-slice.png" class="cake-card-img" />
+            <h3 class="cake-card-title">slice cake</h3>
+            <p class="cake-card-price">rs-000</p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+        <div class="cake-card">
+
+            <img src="./img/strawberry-cake.png" class="cake-card-img" />
+            <h3 class="cake-card-title">strawberry</h3>
+            <p class="cake-card-price">rs-888 </p>
+            <button class="cake-card-btn">order now</button>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+   
+
+    <script src="http://kit.fontawesome.com/10e1ccecc8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

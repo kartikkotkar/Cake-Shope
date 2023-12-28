@@ -1,0 +1,302 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fffdff;
+}
+
+.navbar {
+    background-color: rgb(122, 151, 158);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.navbar-icons {
+    height: 50px;
+
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080505;
+    margin-left: 10px;
+
+
+}
+
+
+.navbar-menus {
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 15px;
+    transition: 1.5s;
+
+}
+
+.navbar-menus:hover {
+    color: #ffff;
+    transform: scale(1.5);
+}
+
+.img {
+    height: 200px;
+    
+    margin-right: 100px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(45, 47, 45);
+   
+}
+
+.heder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.shope-container {
+    color: rgb(13, 15, 9);
+    font-size: 30px;
+    transition: 1s;
+
+}
+
+.shope-container:hover {
+    box-shadow: 2px 2px 2px 2px gray;
+    transform: scale(0.3);
+}
+
+.shope-container1 {
+    color: rgb(4, 3, 3);
+}
+
+.order-btn {
+    color: rgb(13, 8, 8);
+    background-color: rgb(251, 245, 245);
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.order-btn:hover {
+    transform: scale(0.5);
+    box-shadow: 3px 3px 3px 3px rgb(18, 17, 15);
+
+}
+
+.feuture-card {
+
+    width: 240px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(45, 47, 45);
+}
+
+.feuture-card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.card-image {
+    width: 20px;
+
+    padding-left: 50%;
+    padding-right: 50%;
+
+
+}
+
+.feuture-title {
+    text-align: center;
+    font-size: 15px;
+}
+
+.feture-discription {
+    text-align: center;
+    font-size: 10px;
+}
+
+.feuture-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.our-cakes-heading {
+    font-size: 50px;
+    color: #040202;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cakes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+.cake-card {
+    background-color: white;
+    width: 130px;
+    height: 160px;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(45, 47, 45);
+
+}
+
+.cake-card:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.cake-card-img {
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+    filter: drop-shadow(5px 5px 5px green);
+}
+
+.cake-card-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    color: rgb(243, 10, 224);
+}
+
+.cake-card-price {
+    text-align: center;
+    color: rgb(243, 10, 224);
+
+}
+
+.cake-card-btn {
+    color: rgb(243, 10, 224);
+    padding: 2px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.reviwes-title {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.costomer-reviews-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 210px;
+    height: 200pxpx;
+    margin: 20px;
+    display: flex;
+
+
+}
+
+.reviwes-card-img {
+    width: 80px;
+    padding-left: 60px;
+    padding-top: 10px;
+
+}
+
+.reviews-name {
+    text-align: center;
+    font-size: 10px;
+    color: #47e213;
+}
+
+.reviews-discription {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+.main-footer {
+    background-color: #ffff;
+
+    height: 300px;
+    margin: 10px;
+    border:1px solid rgb(8, 7, 5) ;
+   
+}
+
+.footer-name {
+    color: rgb(9, 12, 10);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+.footer-brand-name{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .navbar-menus {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-menus {
+        display: block;
+        margin: 10px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .feuture-card {
+        margin-top: 80px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .heder-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feuture-card {
+        margin-top: 50px;
+    }
+
+
+}
